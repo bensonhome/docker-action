@@ -7,6 +7,9 @@ echo "---> get GITHUB_WORKSPACE:"$GITHUB_WORKSPACE
 echo "---> ls $GITHUB_WORKSPACE:"
 ls $GITHUB_WORKSPACE
 echo "--------------------------"
+echo "---> ls:"
+ls
+echo "--------------------------"
 echo "---> GITHUB_PATH:"$GITHUB_PATH
 echo "---> PATH:"$PATH
 echo "---> get GITHUB_REPOSITORY:"$GITHUB_REPOSITORY
