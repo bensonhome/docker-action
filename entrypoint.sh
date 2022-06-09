@@ -16,6 +16,15 @@ echo "---> running task url:"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/
 echo "::warning file=entrypoint.sh,line=4,col=5,endColumn=7::Missing semicolon"
 echo "::error file=entrypoint.sh,line=1,col=3,endColumn=10::Missing semicolon"
 
+echo "::warning file=README.md,line=4,col=5,endColumn=7::Missing semicolon"
+echo "::error file=README.md,line=1,col=3,endColumn=10::Missing semicolon"
+
+echo "::warning file=action.yml,line=4,col=5,endColumn=7::Missing semicolon"
+echo "::error file=action.yml,line=1,col=3,endColumn=10::Missing semicolon"
+
+echo "::error file=Dockerfile,line=3,col=1,endColumn=8::Line too long"
+echo "::warning file=Dockerfile,line=5::Line too long"
+
 echo "::error file=action.yml,line=3,col=1,endColumn=8::Line too long"
 echo "::warning file=action.yml,line=5::Line too long"
 
