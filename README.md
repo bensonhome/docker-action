@@ -16,7 +16,7 @@ The time we greeted you.
 
 ## Example usage
 ```
-uses: actions/hello-world-docker-action@v1
+uses: bensonhome/docker-action@v2
 with:
   who-to-greet: 'My Friend'
 ```
