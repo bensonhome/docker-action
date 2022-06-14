@@ -8,7 +8,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: get git diff files
-        run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }} > changed.txt  && cat changed.txt
+        run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }} > changed.txt
+      - name: cat changed.txt
+        run: ls && cat changed.txt
       - name: Tencent Cloud Code Analysis
         uses: TCATools/TCA-action@main
         with:
