@@ -37,3 +37,6 @@ echo "---> GITHUB_PATH:"$GITHUB_PATH
 
 time=$(date)
 echo "::set-output name=time::$time"
+
+echo "get git diff files on revision:" ${{ github.sha }}
+git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
