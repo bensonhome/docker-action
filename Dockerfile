@@ -6,7 +6,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends $EXTRA_TOOLS
 
 # install pylint semgrep
-pip install pylint==2.6.0 semgrep==0.54.0
+RUN pip3 install pylint==2.6.0 semgrep==0.54.0
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
