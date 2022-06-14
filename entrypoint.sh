@@ -15,8 +15,7 @@ echo "---> PATH:"$PATH
 echo "---> get GITHUB_REPOSITORY:"$GITHUB_REPOSITORY
 echo "---> get GITHUB_REF:"$GITHUB_REF
 echo "---> running task url:"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
-echo "---> get git diff files on revision:" ${{ github.sha }}
-git diff-tree --no-commit-id --name-only -r ${{ github.sha }}
+
 
 echo "::warning file=entrypoint.sh,line=4,col=5,endColumn=7::Missing semicolon"
 echo "::error file=entrypoint.sh,line=1,col=3,endColumn=10::Missing semicolon"
